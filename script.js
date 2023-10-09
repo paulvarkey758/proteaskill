@@ -36,7 +36,7 @@ function testimonialAnim(){
 $("#myForm").submit((e)=>{
     e.preventDefault()
     $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbxdiHUNQIg9q9Jq9PCV2bdekBKP2Yt-dAQa_8KBFOvC3PgyEsqXvq-M6o_2NJ-zPsZfUg/exec",
+        url:"https://script.google.com/macros/s/AKfycbyXvVoSDrm5DkXSnNWzMQDfHlBrC_BprdxN_ZrCrYXco61RyLjyWmXjL61S3ueQ8ZaA/exec",
         data:$("#myForm").serialize(),
         method:"post",
         success:function (response){
