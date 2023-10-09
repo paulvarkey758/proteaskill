@@ -30,7 +30,7 @@ nav{
     background-color: var(--icon-blue);
 }
 p{
-    text-align: justify;
+    text-align: left;
 }
 a{
     text-decoration: none;
@@ -79,7 +79,7 @@ a{
     padding-top: 12rem;
 }
 .banner h1{
-    color: var(--icon-yellow);
+    color: white;
     font-size: 4rem;
     font-weight: bolder;
 }
