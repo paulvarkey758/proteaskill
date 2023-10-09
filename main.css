@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --icon-yellow:#e64125; /*ffc300*/
+    --icon-blue:#0b132b; /*0B132B */
+    --icon-green:rgb(6, 167, 125);
+    --icon-red:#ffc300;
+    --icon-light:#B4A0E5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+body{
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--icon-blue);
+}
+p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+}
+.sec-styles{
+    margin-top: 3rem;
+}
+#logo{
+    width: 14rem;
+    height: 5rem;
+}
+.navlist{
+    list-style-type: none;
+    float: right;
+}
+.navlist li{
+    color: var(--icon-yellow);
+    margin: 1rem 1rem 0 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.navlist li a{
+    text-decoration: none;
+    color: var(--icon-yellow);
+}
+.menu-icon{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+    color: var(--icon-yellow);
+}
+.menu-icon i{
+    font-size: 2rem;
+}
+/*=====================================================banner section=======================================================================*/
+
+.banner{
+    width: 100%;
+    height: 40rem;
+    background-image:linear-gradient(rgba(11, 19, 43,0.7),rgba(11, 19, 43,0.7)),url(images/banner4.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding-top: 12rem;
+}
+.banner h1{
+    color: var(--icon-yellow);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.banner p{
+    color: white;
+    font-weight:light;
+    font-size: 18px;
+    text-align: center;
+}
+.banner button{
+    background-color: var(--icon-yellow);
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    font-weight: bold;
+    border-radius: 26px;
+}
+.banner button>a{
+    color: var(--icon-blue);
+}
+.banner button:active{
+    background-color: var(--icon-red);
+}
+
+/*==========================================================feature section==================================================================*/
+
+.feature-area{
+    position: relative;
+}
+.feature-wrapper{
+    position: absolute;
+    top: -130px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.feature-card{
+    width: 60%;
+    height: 375px;
+    margin: auto;
+    border: 1px solid var(--icon-blue);
+    padding: 1rem 20px 10px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px black;
+}
+.feature-card img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.feature-card h4{
+    margin: 1rem auto 1rem auto;
+    color: var(--icon-blue);
+}
+.feature-card:hover{
+    transform: scale(1.1);
+}
+
+/*================================================================introduction section========================================================*/
+
+.intro-wrapper{
+    margin-top: 19rem;
+}
+.intro-image{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.about-image{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.intro-text-wrapper{
+    padding-top: 5rem;
+}
+.intro-text-wrapper h2{
+    margin-bottom: 2rem;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+.founder-image-wrapper{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;                                       
+}
+.founder-image-wrapper>img{
+    width: 50%;
+    border-radius: 50%;
+    border: 6px solid var(--icon-blue);
+}
+
+/*============================================================advisor and founder section==============================================*/
+.advisor-block{
+    width: 100%;
+    color: white;
+}
+.advisor-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.advisor-box{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    flex: 1 0 240px;
+}
+.advisor-box>img{
+    width: 65%;
+    /* height: 15rem; */
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+}
+.advisor-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.advisor-title{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+.advisor-subtitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+.founder-block{
+    width: 60%;
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+.founder-wrapper{
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    align-items: center;
+    box-shadow: 0 0 25px black;
+}
+.founder-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.founder-box>img{
+    width: 95%;
+    /* height: 18rem; */
+    border-radius: 50%;
+    border: 5px solid var(--icon-blue);
+    margin-bottom: 1rem;
+}
+.founder-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+.founder-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--icon-blue);
+}
+.founder-subtitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--icon-blue);
+}
+
+/*===========================================================our staffs===========================================================*/
+.staff-container{
+    display: flex;
+    width: 100%;
+    padding: 2rem 10px;
+    justify-content: space-evenly;
+    /* overflow-x: scroll; */
+}
+.staff-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+.staff-box>img{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--icon-blue);
+    margin-bottom: 1rem;
+}
+.staff-data{
+    color: var(--icon-blue);
+    font-weight: 500;
+}
+.staff-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.staff-wrapper{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    justify-content: space-between;
+    /* align-content: stretch; */
+}
+/*=============================================================testimonial secton=============================================================*/
+
+.testimonial-card{
+    width: 20rem;
+    margin: 3rem auto 2rem auto;
+    position: relative;
+    padding: 5rem 20px 20px 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+}
+.testimonial-card img{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    right: 50%;
+    top: -65px;
+    transform: translateX(50%);
+    border: 1px solid var(--icon-yellow);
+}
+.testimonial-card h4{
+    color: var(--icon-blue);
+}
+.container-bg{
+    background-color: var(--icon-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#testimonials center{
+    margin-bottom: 3rem;
+    color: white;
+}
+.testimonial-card-anim{
+    animation: 1s testimonialCard ease-in forwards;
+}
+@keyframes testimonialCard{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*=========================================================price section====================================================================*/
+
+.price-card{
+    width: 70%;
+    box-shadow: 0px 0px 13px black;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 30px 15px 15px 15px;
+    height: 370px;
+    position: relative;
+}
+#priceSection{
+    padding-top: 2rem;
+}
+#priceSection h2{
+    margin-bottom: 3rem;
+    color: var(--icon-blue);
+    text-transform: uppercase;
+}
+.price-card div{
+    background-color: var(--icon-blue);
+    width: 70%;
+    color: white;
+    font-size: larger;
+    padding: 5px auto 5px auto;
+    margin: 15px auto 10px auto;
+    border-radius: 20px;
+}
+.price-card ul{
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+}
+.price-card button{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 25px;
+    width: 60%;
+    font-size: large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight:bold;
+    background-color: var(--icon-green);
+    border-radius: 20px;
+}
+.price-card button>a{
+    color: white;
+}
+.price-card:hover{
+    transform: translateY(-10px);
+}
+.price-card button:active{
+    background-color: rgb(6, 88, 66);
+}
+
+/*===========================================================status banner==================================================================*/
+
+.status-banner{
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(rgba(0,53,102,0.7),rgba(0,53,102,0.7)) ,url(images/status-banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.status-element-wrapper{
+    text-align: center;
+    padding-top: 5rem;
+}
+.status-element-wrapper i img{
+    width: 80px;
+    height: 80px;
+}
+.status-element-wrapper h4{
+    color: white;
+    margin-top: 30px;
+}
+.status-element-wrapper span{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*=========================================================contact section=================================================================*/
+#contact-heading{
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+.contact-form{
+    margin:3rem auto 0 auto;
+    width: 95%;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+}
+.form-label{
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+
+.form-data{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%; 
+    height: 57px;
+    margin-bottom: 2rem;
+    border: 2px solid var(--icon-blue);
+    border-radius: 20px;
+}
+#formMessage{
+    height: 145px;
+}
+#formButton{
+    background-color: var(--icon-blue);
+    color: white;
+}
+.address-wrapper{
+    margin: 0 auto;
+}
+.address-wrapper div{
+    width: 40%;
+    margin:3rem auto 0 auto;
+    font-size: 18px;
+    color: var(--icon-yellow);
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 1.2rem;
+}
+.address-wrapper div i{
+    font-size: 1.5rem;
+    /* padding-top: 1rem; */
+}
+
+/*========================================================footer===========================================================================*/
+
+footer{
+    background-color: var(--icon-blue);
+    padding: 3rem 2rem 1rem;
+}
+
+.q-link-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: var(--icon-yellow);
+}
+.q-link-wrapper h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.q-link-wrapper ul{
+    list-style: none;
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+}
+.q-link-wrapper ul li a{
+    text-decoration: none;
+    color: var(--icon-yellow);
+}
+.social-links{
+    width: 70%;
+    margin: auto;
+    color: var(--icon-yellow);
+    text-align: center;
+}
+.social-links div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons{
+    color: var(--icon-yellow);
+}
+
+.social-icons:hover{
+    transform: scale(1.2);
+}
+#copyright{
+    text-align: center;
+    color: var(--icon-yellow);
+    margin-top: 5rem;
+    font-size: 12px;
+}
+
+/*===============================================small devices====================================================================*/
+@media screen and (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .navlist{
+        width: 100%;
+        position: relative;
+        background-color: var(--icon-blue); 
+        text-align: center;
+        display: none;
+        padding-bottom: 1rem;
+    }
+    .navlist li{
+        display: block;
+    }
+    .navshow{
+        display: block;
+    }
+    .banner{
+        padding: 10rem 1rem 0;
+    }
+    .feature-area{
+        height: 45rem;
+    }
+    .feature-card{
+        margin-bottom: 3rem;
+    }
+    .intro-image{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .intro-text-wrapper h2{
+        font-size: 36px;
+        text-align: center;
+    }
+    .testimonial-card{
+        margin-bottom: 3rem;
+    }
+    .price-card{
+        margin: 0 auto 4rem;
+    }
+    .status-banner{
+        height: 470px;
+    }
+    .status-element-wrapper{
+        padding-top: 2rem;
+    }
+    .status-element-wrapper i img{
+        width: 50px;
+        height: 50px;
+    }
+    .status-element-wrapper h4{
+        margin-top: 19px;
+    }
+    .status-element-wrapper span{
+        font-size: 40px;
+    }
+    .address-wrapper{
+        margin-bottom: 3rem;
+    }
+    .q-link-wrapper{
+        margin: 3rem auto 3rem;
+    }
+}
+/*========================================================mobile devices===================================================================*/
+@media screen and (max-width:576px){
+    #logo{
+        width: 8rem;
+        height: 5rem;
+    }
+    .banner{
+        padding-top: 7rem;
+    }
+    .feature-card{
+        width: 95%;
+    }
+    .intro-image{
+        width: 50%;
+    }
+    .intro-text-wrapper{
+        padding: 3rem 1rem 1rem;
+    }
+    .intro-wrapper{
+        margin-top: 27rem;
+    }
+}
+/*==========================================================medium screen===========================================================*/
+
+@media screen and (max-width:992px){
+    .advisor-block{
+        width: 100%;
+    }
+    .advisor-container{
+        flex-direction: row;
+    }
+    .staff-wrapper{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:768px) and (max-width:998px){
+    .feature-card{
+        width: 100%;
+    }
+    .intro-image{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .intro-text-wrapper{
+        padding-top: 2rem;
+    }
+    .testimonial-card{
+        width: 100%;
+        height: 24rem;
+    }
+    .price-card{
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .contact-form input{
+        width: 95%;
+    }
+    #contact{
+        margin-bottom: 2rem;
+    }
+    .social-links{
+        width: 90%;
+    }
+}
+/*=================================================================large screen======================================================*/
+@media screen and (min-width:998px) and (max-width:1200px){
+    .feature-card{
+        width: 80%;
+    }
+    .intro-image{
+        width: 95%;
+        margin-top: 3rem;
+    }
+}
+
+/*====================================================loader==========================================================================*/
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0) url(images/loader.gif) center center no-repeat;
+    background-size: 100px;
+    position: fixed;
+    z-index: 20;
+}
+
