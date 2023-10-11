@@ -442,6 +442,14 @@ a{
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--icon-blue);
+    position: relative;
+}
+.form-label-required::after{
+    content: "*";
+    color: red;
+    position: absolute;
+    top: -2px;
+    right: -10px;
 }
 
 .form-data{
@@ -450,8 +458,19 @@ a{
     width: 90%; 
     height: 57px;
     margin-bottom: 2rem;
+    margin-top: 0.5rem;
     border: 2px solid var(--icon-blue);
     border-radius: 20px;
+}
+.form-field-wrapper{
+    position: relative;
+}
+.form-validation-message{
+    position: absolute;
+    bottom: 2px;
+    left: 2rem;
+    color: red;
+    font-size: 14px;
 }
 #formMessage{
     height: 145px;
@@ -560,6 +579,7 @@ footer{
     }
     .feature-card{
         margin-bottom: 3rem;
+        height: auto;
     }
     .intro-image{
         width: 100%;
@@ -610,6 +630,7 @@ footer{
     }
     .feature-card{
         width: 95%;
+        height: auto;
     }
     .intro-image{
         width: 50%;
@@ -680,7 +701,7 @@ footer{
 #preloader{
     width: 100%;
     height: 100vh;
-    background: rgb(0,0,0) url(images/loader.gif) center center no-repeat;
+    background: rgb(11,19,43) center center no-repeat;
     background-size: 100px;
     position: fixed;
     z-index: 20;

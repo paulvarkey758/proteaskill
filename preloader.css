@@ -1,0 +1,24 @@
+
+.box-container{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: #e64125;
+    animation: flip 1.5s infinite;
+}
+
+@keyframes flip{
+    50%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
