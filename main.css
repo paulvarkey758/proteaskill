@@ -112,8 +112,8 @@ a{
 .feature-wrapper{
     position: absolute;
     top: -130px;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .feature-card{
     width: 60%;
@@ -152,8 +152,8 @@ a{
 }
 .about-image{
     width: 80%;
-    display: block;
-    margin: auto;
+    /* display: block;
+    margin: auto; */
 }
 .intro-text-wrapper{
     padding-top: 5rem;
@@ -345,12 +345,13 @@ a{
 
 .price-card{
     width: 70%;
-    box-shadow: 0px 0px 13px black;
+    box-shadow: 0px 0px 9px -2px black;
     margin: 1rem auto;
     text-align: center;
     padding: 30px 15px 15px 15px;
-    height: 370px;
+    height: 300px;
     position: relative;
+    border-radius: 20px;
 }
 #priceSection{
     padding-top: 2rem;
@@ -384,7 +385,8 @@ a{
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight:bold;
-    background-color: var(--icon-green);
+    background-color: var(--icon-yellow);
+    border-color: var(--icon-yellow);
     border-radius: 20px;
 }
 .price-card button>a{
@@ -476,8 +478,12 @@ a{
     height: 145px;
 }
 #formButton{
-    background-color: var(--icon-blue);
+    background-color: var(--icon-yellow);
+    border-color: var(--icon-yellow);
     color: white;
+}
+#formButton:hover{
+    background-color: red;
 }
 .address-wrapper{
     margin: 0 auto;
@@ -583,8 +589,8 @@ footer{
     }
     .intro-image{
         width: 100%;
-        margin: auto;
-        display: block;
+        /* margin: auto;
+        display: block; */
     }
     .intro-text-wrapper h2{
         font-size: 36px;
