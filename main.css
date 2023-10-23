@@ -27,7 +27,7 @@ header{
 nav{
     width: 100%;
     height: 5rem;
-    background-color: var(--icon-blue);
+    background-color: var(--icon-yellow);
 }
 p{
     text-align: left;
@@ -55,14 +55,14 @@ a{
 }
 .navlist li a{
     text-decoration: none;
-    color: var(--icon-yellow);
+    color: white;
 }
 .menu-icon{
     position: absolute;
     top: 30px;
     right: 20px;
     display: none;
-    color: var(--icon-yellow);
+    color: white;
 }
 .menu-icon i{
     font-size: 2rem;
@@ -566,7 +566,7 @@ footer{
     .navlist{
         width: 100%;
         position: relative;
-        background-color: var(--icon-blue); 
+        background-color: var(--icon-yellow); 
         text-align: center;
         display: none;
         padding-bottom: 1rem;
@@ -645,7 +645,7 @@ footer{
         padding: 3rem 1rem 1rem;
     }
     .intro-wrapper{
-        margin-top: 27rem;
+        margin-top: 12rem;
     }
 }
 /*==========================================================medium screen===========================================================*/
