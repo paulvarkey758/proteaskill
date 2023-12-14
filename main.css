@@ -481,6 +481,21 @@ a{
     font-weight: bold;
 }
 
+/*================================================student section==================================================================*/
+.student-container{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    overflow-x: scroll;
+}
+.student-container>img{
+    width: 10rem;
+    border-radius: 50%;
+}
+
 /*=========================================================contact section=================================================================*/
 #contact-heading{
     font-weight: bold;
@@ -724,6 +739,12 @@ footer{
     }
     .staff-wrapper{
         flex-wrap: wrap;
+    }
+    .student-container{
+        justify-content: flex-start;
+    }
+    .student-container>img{
+        width: 8rem;
     }
 }
 @media screen and (min-width:768px) and (max-width:998px){
