@@ -346,21 +346,23 @@ a{
 }
 .staff-wrapper{
     display: flex;
-    /* flex-wrap: wrap; */
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: flex-start; */
     /* align-content: stretch; */
+    overflow-x: scroll;
+    gap: 1rem;
 }
 /*=============================================================testimonial secton=============================================================*/
 
 .testimonial-card{
     width: 20rem;
-    margin: 3rem auto 2rem auto;
+    margin: 5rem auto 2rem auto;
     position: relative;
     padding: 5rem 20px 20px 20px;
     text-align: center;
     background-color: white;
     box-shadow: 0px 0px 10px black;
+    flex: 0 0 20rem;
 }
 .testimonial-card img{
     position: absolute;
@@ -372,9 +374,10 @@ a{
     transform: translateX(50%);
     border: 1px solid var(--icon-yellow);
 }
-.testimonial-card h4{
+.testimonial-card h4,h6{
     color: var(--icon-blue);
 }
+
 .container-bg{
     background-color: var(--icon-blue);
     padding-top: 2rem;
@@ -384,7 +387,7 @@ a{
     margin-bottom: 3rem;
     color: white;
 }
-.testimonial-card-anim{
+/* .testimonial-card-anim{
     animation: 1s testimonialCard ease-in forwards;
 }
 @keyframes testimonialCard{
@@ -394,7 +397,7 @@ a{
     100%{
         transform: translateY(0px);
     }
-}
+} */
 /*=========================================================price section====================================================================*/
 
 .price-card{
@@ -415,7 +418,7 @@ a{
     color: var(--icon-blue);
     text-transform: uppercase;
 }
-.price-card div{
+.title-box{
     background-color: var(--icon-blue);
     width: 70%;
     color: white;
@@ -451,6 +454,16 @@ a{
 }
 .price-card button:active{
     background-color: rgb(6, 88, 66);
+}
+.special-crad{
+    padding: 3px 4px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    transform: rotate(45deg);
+    border-radius: 6px;
 }
 
 /*===========================================================status banner==================================================================*/
