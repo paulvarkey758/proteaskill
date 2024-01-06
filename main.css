@@ -502,11 +502,20 @@ a{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    overflow-x: scroll;
 }
-.student-container>img{
-    width: 10rem;
+.student-image{
+    width: 20rem;
     border-radius: 50%;
+    display: none;
+}
+.next-prev{
+    width: 3rem;
+    cursor: pointer;
+}
+
+
+.show{
+    display: block;
 }
 
 /*=========================================================contact section=================================================================*/
@@ -753,11 +762,8 @@ footer{
     .staff-wrapper{
         flex-wrap: wrap;
     }
-    .student-container{
-        justify-content: flex-start;
-    }
     .student-container>img{
-        width: 8rem;
+        width: 12rem;
     }
 }
 @media screen and (min-width:768px) and (max-width:998px){

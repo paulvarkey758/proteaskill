@@ -40,6 +40,53 @@ const handleErrorMessage = (currentEl)=>{
     currentEl.parentNode.append(newEl)
 }
 
+// student carousel
+const NextStudent = ()=>{
+    var allImages = document.querySelectorAll(".student-image")
+    var nextId = 0
+    for(var i=0;i<allImages.length;i++){
+        var isShow = false
+        allImages[i].classList.forEach((cls)=>{
+            if(cls==="show"){
+                isShow = true
+            }
+        })
+        if(isShow){
+            if(i === allImages.length-1){
+                nextId = parseInt(allImages[i].id)
+            }
+            else{
+                allImages[i].classList.remove("show")
+            nextId =  parseInt(allImages[i].id) + 1
+            }    
+        }  
+    }
+    document.getElementById(nextId).classList.add("show")
+}
+
+const PrevStudent = ()=>{
+    var allImages = document.querySelectorAll(".student-image")
+    var prevId = 0
+    for(var i=0;i<allImages.length;i++){
+        var isShow = false
+        allImages[i].classList.forEach((cls)=>{
+            if(cls==="show"){
+                isShow = true
+            }
+        })
+        if(isShow){
+            if(i === 0){
+                prevId = parseInt(allImages[i].id)
+            }
+            else{
+                allImages[i].classList.remove("show")
+                prevId =  parseInt(allImages[i].id) - 1
+            }    
+        }  
+    }
+    document.getElementById(prevId).classList.add("show")
+}
+
 $("#myForm").submit((e)=>{
     e.preventDefault()
     var parentName = document.getElementById("parentName")
