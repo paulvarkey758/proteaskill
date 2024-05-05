@@ -18,6 +18,7 @@
 }
 body{
     margin: 0;
+    position: relative;
 }
 header{
     position: sticky;
@@ -67,6 +68,7 @@ a{
 .menu-icon i{
     font-size: 2rem;
 }
+
 /*=====================================================banner section=======================================================================*/
 
 .banner{
@@ -816,5 +818,33 @@ footer{
     background-size: 100px;
     position: fixed;
     z-index: 20;
+}
+.fixed-btn{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 20;
+}
+.fixed-btn img{
+    width: 8rem;
+    animation: book-demo 2.5s forwards;
+}
+
+@keyframes book-demo{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:576px){
+    .fixed-btn{
+        top: 45%;
+    }
+    .fixed-btn img{
+        width: 5rem;
+    }
 }
 
