@@ -139,3 +139,8 @@ $("#myForm").submit((e)=>{
     
     
 })
+
+//popup
+document.getElementById("popUpCloseButton").addEventListener('click',()=>{
+    document.querySelector(".pop-up").classList.add('hide')
+})

@@ -1,0 +1,46 @@
+.pop-up{
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.inner-frame{
+    width: 100%;
+    position: relative;
+    background-color: var(--icon-yellow);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+.inner-frame img{
+    width: 35rem;
+    border-radius: 12px ;
+}
+.inner-frame button{
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.inner-frame svg{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 2rem;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+    .inner-frame img{
+        width: 20rem;
+    }
+}
